@@ -1,0 +1,23 @@
+# ~/.config/yazi/yazi.toml
+[mgr]
+ratio       = [1, 4, 4]   # pane widths: parent | current | preview
+# show_hidden = true        # also togglable with '.'
+
+# [theme]                   # Nord-ish, tweak away
+# bg   = "#2E3440"
+# fg   = "#D8DEE9"
+# red  = "#BF616A"
+# blue = "#81A1C1"
+#
+[opener]
+imv     = [{ run = "imv $@", orphan = true }]
+mpv     = [{ run = "mpv --fs $@",          orphan = true }]
+zathura = [{ run = "zathura $@",           block  = true }]
+
+# ---------- 2. tell Yazi when to use them ------------
+[open]
+prepend_rules = [
+  { mime = "image/*",         use = "imv"     },
+  { mime = "video/*",         use = "mpv"     },
+  { mime = "application/pdf", use = "zathura" },
+]

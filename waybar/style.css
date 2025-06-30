@@ -1,16 +1,21 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 window#waybar {
     /* background-color: rgba(43, 48, 59, 0.5); */
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
-    background-color: transparent;
+    /* background-color: transparent; */
+    /* background-color: black; */
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    background-color: rgba(42, 42, 42, 0.90);
+    /* background-color: gray; */
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
+    border-radius: 10px;
 }
 
 window#waybar.hidden {
