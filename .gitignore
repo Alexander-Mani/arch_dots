@@ -6,6 +6,9 @@ nvim
 spell/
 lazy-lock.json
 
+kde.org
+khal
+configstore/*
 
 Electron
 Signal
